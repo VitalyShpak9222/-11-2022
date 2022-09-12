@@ -10,7 +10,7 @@ namespace Провека_работы_1
     {
         static void Main(string[] args)
         {
-            if (var i = Console.ReadLine(); first.
+ 
         }
     }
 }

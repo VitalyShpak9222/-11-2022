@@ -14,21 +14,20 @@ namespace HW_from_10._09._2022
             Console.WriteLine("2,7");
             Console.WriteLine("Для продолжения нажмите на Enter");
             Console.ReadKey();
+            Console.Clear();
 
             Console.WriteLine("Задание 2");
             Console.WriteLine("50");
             Console.WriteLine("10");
             Console.WriteLine("Для продолжения нажмите на Enter");
             Console.ReadKey();
+            Console.Clear();
 
             Console.WriteLine("Задание 3");
-            Random x = new Random();
-            for (int i = 0; i <= 5; i++)
-            {
-                Console.WriteLine(x.NextDouble());
-            }
+            Console.WriteLine("2\r\n6\r\n97\r\n92");
             Console.WriteLine("Для продолжения нажмите на Enter");
             Console.ReadKey();
+            Console.Clear();
 
             Console.WriteLine("Задание 4");
             Console.WriteLine("Введите свое число");
@@ -36,6 +35,7 @@ namespace HW_from_10._09._2022
             Console.WriteLine(x2 + 10);
             Console.WriteLine("Для продолжения нажмите на Enter");
             Console.ReadKey();
+            Console.Clear();
 
             Console.WriteLine("Задание 5");
             Console.WriteLine("Введите число равное стороне квадрата");
@@ -43,6 +43,7 @@ namespace HW_from_10._09._2022
             Console.WriteLine("Периметр квадрата со стороной указанной вами равен " + n * 4);
             Console.WriteLine("Для продолжения нажмите на Enter");
             Console.ReadKey();
+            Console.Clear();
 
             Console.WriteLine("Задание 6");
             Console.WriteLine("Введите длинну радиуса окружности");
@@ -53,6 +54,7 @@ namespace HW_from_10._09._2022
             Console.WriteLine("Площадь окружности равна " + p);
             Console.WriteLine("Для продолжения нажмите на Enter");
             Console.ReadKey();
+            Console.Clear();
 
             Console.WriteLine("Задание 7");
             Console.WriteLine("Введите градусную величену угла");
@@ -60,6 +62,7 @@ namespace HW_from_10._09._2022
             Console.WriteLine("Косигус угла равен " + Math.Cos(x4));
             Console.WriteLine("Для продолжения нажмите на Enter");
             Console.ReadKey();
+            Console.Clear();
 
             Console.WriteLine("Задание 8");
             Console.WriteLine("Введите длинны сонований и высоты в очередности: основание1, основани2, высота ");
@@ -70,6 +73,7 @@ namespace HW_from_10._09._2022
             Console.WriteLine("Периметр трапеции равен " + (2*Math.Sqrt((h * h) + (x5 * x5)) + d1 + d2));
             Console.WriteLine("Для продолжения нажмите на Enter");
             Console.ReadKey();
+            Console.Clear();
 
             Console.WriteLine("Зфдание 9");
             Console.WriteLine("Введите массу купленных товаров. В очередности конфеты, печенье, яблоки \r\n Будем считать что стоимость товаров такова \r\n конфеты : 142 \r\n печенье : 87 \r\n nяблоки : 234");
@@ -79,6 +83,7 @@ namespace HW_from_10._09._2022
             Console.WriteLine("Чек " + (z1 * 142) + (z2 * 87) + (z3 * 234));
             Console.WriteLine("Для продолжения нажмите на Enter");
             Console.ReadKey();
+            Console.Clear();
 
             Console.WriteLine("Задание 10");
             Console.WriteLine("Мир Труд Май");
@@ -93,6 +98,176 @@ namespace HW_from_10._09._2022
             Console.WriteLine("Введите два числа");
             var th1 = Console.ReadLine();
             var th2 = Console.ReadLine();
+            Console.Clear();
+
+            Console.WriteLine("Задание 12");
+            Console.WriteLine("Что будем вычислять? Площадь или периметр?\r\n Для выбора площади введите 1 \r\n Для выбора периметра введите 2");
+            int ch = int.Parse(Console.ReadLine());
+            Console.WriteLine("Какая фигура будет в центре нашего внимания?\r\n Для выбора треугольника введите 1\r\n Для выбора четырехугольника введите 2\r\n Для выбора круга введите 3");
+            int ch1 = int.Parse(Console.ReadLine());
+            if (ch1 == 1)
+            {
+                Console.WriteLine("Введите длинны стороны и высоты треугольника . По очереди");
+                double x7 = double.Parse(Console.ReadLine());
+                double x8 = double.Parse(Console.ReadLine());
+                if (ch == 1)
+                {
+                    Console.WriteLine("Для треугольника площадь равна " + (x7 * x8 / 2) + "\r\n  Для четырехугольника площадь равна " + (x7 * x8) + "\r\n Для круга площадь равна " + (3.14 * Math.Max(x7, x8) * Math.Max(x8, x7)));
+                }
+                if (ch == 2)
+                {
+                    Console.WriteLine("Для переметр треугольника равен " + (Math.Sqrt((x7 * x7) + (x8 * x8)) + x7 + x8) + "\r\n Для четырехугольника периметр равен " + (2 * (x7 + x8)) + "\r\n Для круга периметр равен " + (0.5 * Math.Max(x7, x8) * 2 * 3.14));
+                }
+            }
+            if (ch1 == 2)
+            {
+                Console.WriteLine("Введите длинны сторон высоты четырехугольника . По очереди");
+                double x7 = double.Parse(Console.ReadLine());
+                double x8 = double.Parse(Console.ReadLine());
+                if (ch == 1)
+                {
+                    Console.WriteLine("Для треугольника площадь равна " + (x7 * x8 / 2) + "\r\n  Для четырехугольника площадь равна " + (x7 * x8) + "\r\n Для круга площадь равна " + (3.14 * Math.Max(x7, x8) * Math.Max(x8, x7)));
+                }
+                if (ch == 2)
+                {
+                    Console.WriteLine("Для переметр треугольника равен " + (Math.Sqrt((x7 * x7) + (x8 * x8)) + x7 + x8) + "\r\n Для четырехугольника периметр равен " + (2 * (x7 + x8)) + "\r\n Для круга периметр равен " + (0.5 * Math.Max(x7, x8) * 2 * 3.14));
+                }
+            }
+            if (ch1 == 3)
+            {
+                Console.WriteLine("Введите длинну диаметра");
+                double x7 = double.Parse(Console.ReadLine());
+                double x8 = 0.5 * x7;
+                if (ch == 1)
+                {
+                    Console.WriteLine("Для треугольника площадь равна " + (x7 * x8 / 2) + "\r\n  Для четырехугольника площадь равна " + (x7 * x8) + "\r\n Для круга площадь равна " + (3.14 * Math.Max(x7, x8) * Math.Max(x8, x7)));
+                }
+                if (ch == 2)
+                {
+                    Console.WriteLine("Для переметр треугольника равен " + (Math.Sqrt((x7 * x7) + (x8 * x8)) + x7 + x8) + "\r\n Для четырехугольника периметр равен " + (2 * (x7 + x8)) + "\r\n Для круга периметр равен " + (0.5 * Math.Max(x7, x8) * 2 * 3.14));
+                }
+            }
+            Console.ReadKey();
+            Console.Clear();
+
+            Console.WriteLine("Задание 13");
+            Console.WriteLine("Введите число");
+            double x9 = double.Parse(Console.ReadLine());
+            Console.WriteLine("Вы ввели число " + x9);
+            Console.ReadKey();
+            Console.Clear();
+
+            Console.WriteLine("Задание 14");
+            Console.WriteLine("2 кг\r\n13 17");
+            Console.ReadKey();
+            Console.Clear();
+
+            Console.WriteLine("Задание 15");
+            Random x = new Random();
+            for (int i = 0; i <= 5; i++)
+            {
+                Console.WriteLine(x.NextDouble());
+            }
+            Console.WriteLine("Для продолжения нажмите на Enter");
+            Console.ReadKey();
+            Console.Clear();
+
+            Console.WriteLine("Задание 16");
+            Console.WriteLine("Введите коэффиценты для квадратного уравнения ");
+            Console.WriteLine("Введите значение коэффицента a ");
+            double a = double.Parse(Console.ReadLine());
+            Console.WriteLine("Введите значение коэффицента b ");
+            double b = double.Parse(Console.ReadLine());
+            Console.WriteLine("Введите значение коэффицента c ");
+            double c = double.Parse(Console.ReadLine());
+            Console.WriteLine("Уравнение имеет вид " + a + "x^2 + (" + b + "x) + (" + c + ") = 0");
+            double d = b * b - 4 * a * c;
+            if (d >= 0)
+            {
+                Console.WriteLine("Уравнение имеет корни:");
+                Console.WriteLine("x1 = " + ((-b) + Math.Sqrt(d)) / (2 * a));
+                Console.WriteLine("x2 = " + ((-b) - Math.Sqrt(d)) / (2 * a));
+            }
+            if (d < 0)
+            {
+                Console.WriteLine("Уравнение не имет корней");
+            }
+            Console.ReadKey();
+            Console.Clear();
+
+            Console.WriteLine("Задание 17");
+            int x10 = 1021283;
+            int x11 = 1937242;
+            Console.WriteLine("известны два числа: " + x10,x11 + "\r\n Их среднее арифметическое равно " + ((x10 +x11) * 0.5 ) +"\r\n Их среднее геометрическое равно "+ (x11*x10*0.5));
+            Console.ReadKey();
+            Console.Clear();
+
+            Console.WriteLine("Задание 18");
+            Console.WriteLine("Известны координаты точек A и В \r\nКоординаты точки А (2324;924)\r\nКоординаты точки В (752;223)");
+            Console.WriteLine("Расстояние между точками равно " + Math.Sqrt(((2324 - 252) ^ 2) + ((924 - 223) ^ 2)));
+            Console.ReadKey();
+            Console.Clear();
+
+            Console.WriteLine("Задание 19\r\nЧасть a");
+            int a11 = 15;
+            int b11 = 99;
+            int c11 = 2362;
+            int d11 = b11;
+            b11 = c11;
+            c11 = a11;
+            a11 = d11;
+            Console.ReadKey();
+            Console.Clear();
+            Console.WriteLine("Часть б");
+            a11 = 15;
+            b11 = 99;
+            c11 = 2362;
+            d11 = b11;
+            b11 = a11;
+            a11 = c11;
+            c11 = d11;
+            Console.ReadKey();
+            Console.Clear();
+
+            Console.WriteLine("Задание 20");
+            Console.WriteLine("Введите значение n");
+            int n11 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Прошло " + (n / 3600) + " часов " + ((n % 3600) / 60) + " минут " + (n / 60) + " секунд");
+            Console.ReadKey();
+            Console.Clear();
+
+            Console.WriteLine("Задание 21");
+            Console.WriteLine("Из прямоугольника размером 130*543 можно вырежать " + 543 / 130 + " квадратов размером 130*130");
+            Console.ReadKey();
+            Console.Clear();
+
+            Console.WriteLine("Задание 22");
+            int kk = 285;
+            Console.WriteLine("Начальное число " + kk);
+            string kk1 = Convert.ToString(kk % 10) + Convert.ToString(kk / 10);
+            Console.WriteLine("Конечное число " + kk1);
+            Console.ReadKey();
+            Console.Clear();
+
+            Console.WriteLine("Задание 23");
+            Console.WriteLine("Введите число n где n > 999");
+            int x12 = int.Parse(Console.ReadLine());
+            Console.WriteLine("В числе " + x12 + " Содержется " + (x12 / 100) + " сотен и " + (x12 / 1000) + " тысяч");
+            Console.ReadKey();
+            Console.Clear();
+
+
+
+
+
+
+
+
+
+            
+
+
+
         }
     }
 }
