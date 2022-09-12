@@ -82,7 +82,17 @@ namespace HW_from_10._09._2022
 
             Console.WriteLine("Задание 10");
             Console.WriteLine("Мир Труд Май");
+            string k1 = "Мир";
+            string k2 = "Труд";
+            string k3 = "Май";
+            Console.WriteLine("{0,0}\r\n{1, 10}\r\n{2, 15}", k1, k2, k3);
+            Console.ReadKey();
+            Console.Clear();
 
+            Console.WriteLine("Задание 11");
+            Console.WriteLine("Введите два числа");
+            var th1 = Console.ReadLine();
+            var th2 = Console.ReadLine();
         }
     }
 }

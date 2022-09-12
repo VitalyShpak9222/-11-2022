@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{76C6C31C-3BF7-417A-8578-DFA569B2B251}</ProjectGuid>
+    <ProjectGuid>{9293BCCD-D084-454B-AD84-3FD6BF1E33A8}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Проверка_работы_задач</RootNamespace>
-    <AssemblyName>Проверка работы задач</AssemblyName>
+    <RootNamespace>Провека_работы_1</RootNamespace>
+    <AssemblyName>Провека работы 1</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

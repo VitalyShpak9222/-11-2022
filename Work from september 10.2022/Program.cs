@@ -16,7 +16,8 @@ namespace Work_from_september_10._2022
             string name = Console.ReadLine();
             Console.WriteLine("Привет " + name);
             Console.WriteLine("Для продолжения нажмите на любую клавишу");
-            Console.ReadLine();
+            Console.ReadKey();
+            Console.Clear();
 
             Console.WriteLine("задание 2.2 Тумаком");
             Console.WriteLine("Введите два целых числа");
@@ -24,12 +25,13 @@ namespace Work_from_september_10._2022
             int y = int.Parse(Console.ReadLine());
             Console.WriteLine(x / y);
             Console.WriteLine("Для продолжения нажмите на любую клавишу");
-            Console.ReadLine();
+            Console.ReadKey();
+            Console.Clear();
 
             Console.WriteLine("Задание 2.3 Тумаков");
             Console.WriteLine("Ввкдите одину букв.лат.алфавита");
             string bukv = Console.ReadLine();
-            
+            Console.Clear();
 
             Console.WriteLine("Задание 2.4 Тумаков");
             Console.WriteLine("Введите коэффиценты для квадратного уравнения ");
