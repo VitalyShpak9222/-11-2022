@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Work from september 10.2022
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW from 10.09.2022", "HW from 10.09.2022\HW from 10.09.2022.csproj", "{45BFEF60-0B6F-40FE-ACDD-0FCB9E116A94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Проверка работы задач", "Проверка работы задач\Проверка работы задач.csproj", "{76C6C31C-3BF7-417A-8578-DFA569B2B251}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{45BFEF60-0B6F-40FE-ACDD-0FCB9E116A94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45BFEF60-0B6F-40FE-ACDD-0FCB9E116A94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45BFEF60-0B6F-40FE-ACDD-0FCB9E116A94}.Release|Any CPU.Build.0 = Release|Any CPU
-		{76C6C31C-3BF7-417A-8578-DFA569B2B251}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{76C6C31C-3BF7-417A-8578-DFA569B2B251}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{76C6C31C-3BF7-417A-8578-DFA569B2B251}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{76C6C31C-3BF7-417A-8578-DFA569B2B251}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

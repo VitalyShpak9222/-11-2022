@@ -79,6 +79,10 @@ namespace HW_from_10._09._2022
             Console.WriteLine("Чек " + (z1 * 142) + (z2 * 87) + (z3 * 234));
             Console.WriteLine("Для продолжения нажмите на Enter");
             Console.ReadKey();
+
+            Console.WriteLine("Задание 10");
+            Console.WriteLine("Мир Труд Май");
+
         }
     }
 }
