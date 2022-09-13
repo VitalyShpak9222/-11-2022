@@ -10,7 +10,8 @@ namespace Провека_работы_1
     {
         static void Main(string[] args)
         {
- 
+
+
         }
     }
 }

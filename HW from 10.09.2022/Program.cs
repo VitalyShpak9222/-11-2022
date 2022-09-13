@@ -164,7 +164,7 @@ namespace HW_from_10._09._2022
 
             Console.WriteLine("Задание 15");
             Random x = new Random();
-            for (int i = 0; i <= 5; i++)
+            for (int i = 0; i <= 3; i++)
             {
                 Console.WriteLine(x.NextDouble());
             }
@@ -256,16 +256,116 @@ namespace HW_from_10._09._2022
             Console.ReadKey();
             Console.Clear();
 
+            Console.WriteLine("Задание 24");
+            Console.WriteLine("Введите четырехзначное число");
+            int x13 = int.Parse(Console.ReadLine());
+            string x14 = Convert.ToString(x13);
+            if (x14.Length == 4)
+            {
+                Console.WriteLine("число, полученное при прочтении его цифр справа налево " + x14[4] + x14[3] + x14[2] + x14[1]);
+                Console.WriteLine("число, образуемое при перестановке первой и второй, третьей и четвертой цифр " + x14[2] + x14[1] + x14[4] + x14[3]);
+                Console.WriteLine("число, образуемое при перестановке второй и третьей цифр " + x14[1] + x14[3] + x14[2] + x14[4]);
+                Console.WriteLine("число, образуемое при перестановке двух первых и двух последних цифр " + x14[3] + x14[4] + x14[1] + x14[2]);
+                Console.ReadKey();
+            }
+            else
+            {
+                Console.WriteLine("Вы ввели не четырехзначное число");
+            }
+            Console.Clear();
 
+            Console.WriteLine("Задание 25");
+            Console.WriteLine("Введите число n . n должго принадлежать отрезку [100;999] ");
+            string x16 = Console.ReadLine();
+            Console.WriteLine("Искомое число x = " + x16[2] + x16[0] + x16[1]);
+            Console.ReadKey();
 
+            Console.WriteLine("Задание 26");
+            Console.WriteLine("Введите время. По очереди( часы, минуты, секунды,)");
+            int h1 = int.Parse(Console.ReadLine());
+            int m1 = int.Parse(Console.ReadLine());
+            int s1 = int.Parse(Console.ReadLine());
+            if (h1 > 11)
+            {
+                h1 -= 12;
+            }
+            double f = ((360 / 12) * h1 + (0.5 * m1) + (0.0083 * s1));
+            Console.WriteLine("Сейчас угол между положением стрелки на начало дня и временем ввреденным вами равен " + f);
+            Console.ReadKey();
 
+            Console.WriteLine("Задание 28");
+            Console.WriteLine("Введите три вещественных числа . По очереди ");
+            List<double> chisl = new List<double>();
+            int x19 = Math.Abs(int.Parse(Console.ReadLine()));
+            int x20 = Math.Abs(int.Parse(Console.ReadLine()));
+            int x21 = Math.Abs(int.Parse(Console.ReadLine()));
+            chisl.AddRange(new double[]
+                {
+                    x19,
+                    x20,
+                    x21
+                }
+                           );
+            Console.WriteLine(chisl.Max());
+            Console.ReadKey();
+            Console.Clear();
 
+            Console.WriteLine("Задание 29\r\nВведите три числа");
+            chisl.Clear();
+            chisl.Add(double.Parse(Console.ReadLine()));
+            chisl.Add(double.Parse(Console.ReadLine()));
+            chisl.Add(double.Parse(Console.ReadLine()));
+            Console.WriteLine("Сумма большего и меньше из трех заданных чисел равна " + (chisl.Max() + chisl.Min()));
+            Console.ReadKey();
+            Console.Clear();
 
+            Console.WriteLine("Задание 30\r\nВведите число ,у которого будет вычисляться количество делителей");
+            int count = 2;
+            int kk11 = int.Parse(Console.ReadLine());
+            for (int i = 2; i < Math.Sqrt(kk11); i++)
+            {
+                if (i == Math.Sqrt(kk11))
+                {
+                    count++;
+                }
+                if (kk11 % i == 0)
+                {
+                    count += 2;
+                }
+            }
+            Console.WriteLine("У числа " + kk11 + ", " + count + " делителей(ля)");
+            Console.ReadKey();
+            Console.Clear();
 
-
-
-            
-
+            chisl.Clear();
+            Console.WriteLine("Задание 31\r\nВедите коэфицинты уравнения третей степени");
+            double x25 = double.Parse(Console.ReadLine());
+            double x26 = double.Parse(Console.ReadLine());
+            double x27 = double.Parse(Console.ReadLine());
+            double x28 = double.Parse(Console.ReadLine());
+            int ii = -100;
+            do
+            {
+                if ((x25 * Math.Pow(ii, 3) + (x26 * Math.Pow(ii, 2)) + (x27 * ii) + x28) == 0)
+                {
+                    chisl.Add(ii);
+                }
+            }
+            while (ii == 101);
+            string str1 = "имеет " + Convert.ToString(chisl.Count) + " корней";
+            string str2 = "не имет корней";
+            string str3;
+            if (chisl.Count > 0)
+            {
+                str3 = str1;
+            }
+            else
+            {
+                str3 = str2;
+            }
+            Console.WriteLine("Уравнение " + x25 + "x^3 + (" + x26 + "x^2) + (" + x27 + "x) + (" + x28 + ") " + str3 + " на участке [-100;100]");
+            Console.ReadKey();
+            Console.Clear();
 
 
         }
