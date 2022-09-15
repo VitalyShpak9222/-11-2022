@@ -29,9 +29,10 @@ namespace Work_from_september_10._2022
             Console.Clear();
 
             Console.WriteLine("Задание 2.3 Тумаков");
-            Console.WriteLine("Ввкдите одину букв.лат.алфавита");
-            string bukv = Console.ReadLine();
-            Console.Clear();
+            Console.WriteLine("Введите одину букв.лат.алфавита");
+            Console.WriteLine(Convert.ToChar(Convert.ToInt32(Convert.ToChar(Console.ReadLine())) + 1));
+            Console.WriteLine("Для продолжения нажмите на любую клавишу");
+            Console.ReadKey(); ;
 
             Console.WriteLine("Задание 2.4 Тумаков");
             Console.WriteLine("Введите коэффиценты для квадратного уравнения ");
